@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{142766BD-DCE7-4E92-AC22-0502B12AC589}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitaInformationSystem</RootNamespace>
+    <AssemblyName>HospitaInformationSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actor\Dokter.cs" />
+    <Compile Include="Actor\Pasien.cs" />
+    <Compile Include="Entity\ETransaksi.cs" />
+    <Compile Include="Entity\ITransaksi.cs" />
+    <Compile Include="Entity\Obat.cs" />
+    <Compile Include="Entity\TransakiObat.cs" />
+    <Compile Include="Entity\TransaksiDetail.cs" />
+    <Compile Include="HalamanHapusDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanHapusDokter.Designer.cs">
+      <DependentUpon>HalamanHapusDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanEditDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanEditDokter.Designer.cs">
+      <DependentUpon>HalamanEditDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanLogin.Designer.cs">
+      <DependentUpon>HalamanLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanTambahDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanTambahDokter.Designer.cs">
+      <DependentUpon>HalamanTambahDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanDepan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanDepan.Designer.cs">
+      <DependentUpon>HalamanDepan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanEdit1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanEdit1.Designer.cs">
+      <DependentUpon>HalamanEdit1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanEditObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanEditObat.Designer.cs">
+      <DependentUpon>HalamanEditObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanHapus1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanHapus1.Designer.cs">
+      <DependentUpon>HalamanHapus1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanHapusObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanHapusObat.Designer.cs">
+      <DependentUpon>HalamanHapusObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanTambah1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanTambah1.Designer.cs">
+      <DependentUpon>HalamanTambah1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanTambahObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanTambahObat.Designer.cs">
+      <DependentUpon>HalamanTambahObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanTransaksi.designer.cs">
+      <DependentUpon>HalamanTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Database.cs" />
+    <Compile Include="Modal\DatabaseQuery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HalamanEditDokter.resx">
+      <DependentUpon>HalamanEditDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanDepan.resx">
+      <DependentUpon>HalamanDepan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanEdit1.resx">
+      <DependentUpon>HalamanEdit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanEditObat.resx">
+      <DependentUpon>HalamanEditObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanHapus1.resx">
+      <DependentUpon>HalamanHapus1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanHapusDokter.resx">
+      <DependentUpon>HalamanHapusDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanHapusObat.resx">
+      <DependentUpon>HalamanHapusObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanLogin.resx">
+      <DependentUpon>HalamanLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanTambah1.resx">
+      <DependentUpon>HalamanTambah1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanTambahObat.resx">
+      <DependentUpon>HalamanTambahObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanTransaksi.resx">
+      <DependentUpon>HalamanTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="HalamanTambahDokter.resx">
+      <DependentUpon>HalamanTambahDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oregaiur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER EDIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER REMOVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT EDIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT REMOVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT TAMBAH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN EDIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN REMOVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN TAMBAH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI EDIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI REMOVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI TAMBAH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo satya wacana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER EDIT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER REMOVE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOKTER11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo rumah sakit satya wacana1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo satya wacana1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT EDIT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT REMOVE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT TAMBAH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBAT OBAT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN EDIT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN REMOVE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN TAMBAH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASIEN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teks1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI EDIT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI REMOVE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI TAMBAH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRANSAKSI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
